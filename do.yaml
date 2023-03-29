@@ -1,0 +1,12 @@
+name: my-function
+services:
+- environment_slug: python
+  github:
+    branch: main
+  http_routes:
+  - path: /
+    destination: handle
+  instance_count: 1
+  name: my-function
+  region: nyc
+  type: python
